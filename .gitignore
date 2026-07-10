@@ -1,0 +1,20 @@
+# ホワイトリスト方式: まず全て無視し、公開したい設定ファイルだけを明示的に許可する。
+# これにより会話履歴・セッション・メモリ・認証情報などの機密が絶対に混入しない。
+
+# --- すべて無視 ---
+/*
+
+# --- 追跡するファイルだけ許可 ---
+!/.gitignore
+!/README.md
+!/CLAUDE.md
+!/settings.json
+!/settings.local.json
+!/statusline-command.sh
+
+# hooks ディレクトリは許可しつつ、中の状態ファイル(.speak-last-hash 等)は無視
+!/hooks/
+/hooks/*
+!/hooks/README.md
+!/hooks/speak-response.sh
+!/hooks/speak-worker.sh

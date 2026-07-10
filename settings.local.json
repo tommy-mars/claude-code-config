@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.gravastar.com)",
+      "WebSearch",
+      "WebFetch(domain:manuals.plus)",
+      "WebFetch(domain:gadgetoid.com)"
+    ]
+  }
+}
