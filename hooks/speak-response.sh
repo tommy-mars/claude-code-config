@@ -3,6 +3,8 @@
 # 実際の合成・再生は speak-worker.sh に任せ、新しい応答が来たら
 # 進行中の読み上げを中断して最新の応答だけを読み上げる
 
+exit 0 # 読み上げ一時停止中 (再開はこの行を削除)
+
 # フック入力の last_assistant_message に最新応答が入っている
 # (transcript ファイルは書き込みが遅れることがあるため使わない)
 last_text=$(jq -r '.last_assistant_message // empty')
