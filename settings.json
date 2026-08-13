@@ -1,4 +1,7 @@
 {
+  "permissions": {
+    "defaultMode": "auto"
+  },
   "hooks": {
     "Stop": [
       {
@@ -25,6 +28,6 @@
     "enabled": true,
     "mode": "tap"
   },
-  "theme": "dark",
+  "theme": "auto",
   "voiceEnabled": true
 }

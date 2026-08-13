@@ -59,10 +59,7 @@ cost=$(echo "$input" | jq -r '.cost.total_cost_usd // empty')
 five_h=$(echo "$input" | jq -r '.rate_limits.five_hour.used_percentage // empty')
 week_d=$(echo "$input" | jq -r '.rate_limits.seven_day.used_percentage // empty')
 
-# 6. Current time (HH:MM)
-now=$(date +%H:%M)
-
-# 7. Weather — cached for 30 min to avoid a network call on every render
+# 6. Weather — cached for 30 min to avoid a network call on every render
 weather_cache="${TMPDIR:-/tmp}/cc_weather_cache"
 weather=""
 if command -v curl >/dev/null 2>&1; then
@@ -136,10 +133,6 @@ fi
 
 if [ -n "$weather" ]; then
     printf "%s\033[1;37m%s\033[0m" "$SEP" "$weather"
-fi
-
-if [ -n "$now" ]; then
-    printf "%s\033[1;34m\xf0\x9f\x95\x92 %s\033[0m" "$SEP" "$now"
 fi
 
 printf "\n"
