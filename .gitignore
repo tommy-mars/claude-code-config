@@ -9,7 +9,6 @@
 !/README.md
 !/CLAUDE.md
 !/settings.json
-!/settings.local.json
 !/statusline-command.sh
 
 # hooks ディレクトリは許可しつつ、中の状態ファイル(.speak-last-hash 等)は無視
