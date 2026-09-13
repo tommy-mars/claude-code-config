@@ -18,3 +18,8 @@
 !/hooks/README.md
 !/hooks/speak-response.sh
 !/hooks/speak-worker.sh
+
+# skills ディレクトリは許可リスト方式で個別に公開する
+!/skills/
+/skills/*
+!/skills/umigame-sre/
