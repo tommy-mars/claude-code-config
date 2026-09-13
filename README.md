@@ -8,7 +8,6 @@
 |---|---|
 | `CLAUDE.md` | 全プロジェクト共通の指示（応答スタイルなど） |
 | `settings.json` | メイン設定（モデル・フック・音声・テーマなど） |
-| `settings.local.json` | ローカルの権限許可リスト |
 | `statusline-command.sh` | ステータスライン表示スクリプト |
 | `hooks/` | Stopフックによる音声読み上げ環境（下記参照） |
 
